@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity  {
     public void getByAuthor(View view) {
         EditText editByAuthor = (EditText) findViewById(R.id.editByAuthor);
         String authorName = editByAuthor.getText().toString();
-
         if(TextUtils.isEmpty(authorName)){
             editByAuthor.setError("You did not enter a author");
             return;
